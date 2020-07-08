@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.sharmaumang.TrackBed.LoginActivity">
+        <activity android:name=".Hospital.HospitalHome"></activity>
+        <activity android:name=".Hospital.HospitalLogin" />
+        <activity android:name=".User.HomeActivity" />
+        <activity android:name=".User.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

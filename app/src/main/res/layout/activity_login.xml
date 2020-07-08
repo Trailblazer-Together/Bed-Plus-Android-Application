@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".User.LoginActivity"
     android:orientation="vertical"
     android:background="@color/background"
     tools:ignore="MissingDefaultResource" >
@@ -123,6 +123,7 @@
 
 
         <TextView
+            android:id="@+id/hospital_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -132,14 +133,17 @@
             android:textAlignment="center"
             android:textColor="@color/blueDark"
             android:textSize="20dp"
+            android:clickable="true"
             tools:layout_editor_absoluteX="84dp"
             tools:layout_editor_absoluteY="273dp" />
 
         <ImageView
+            android:id="@+id/nextPage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="4"
+            android:clickable="true"
             android:paddingVertical="4dp"
             android:src="@drawable/next_arrow" />
 
