@@ -5,7 +5,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:orientation="vertical"
     tools:context="com.sharmaumang.TrackBed.Hospital.HospitalLogin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hospital"
+        android:layout_marginVertical="25dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textview3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="15dp"
+        android:elevation="5dp"
+        android:hint="Enter Hospital ID"
+        android:textColorHint="@color/blueDark"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/blueConstrast">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/hospital_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:textColor="#000">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textview4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="25dp"
+        android:elevation="5dp"
+        android:hint="Enter Passcode"
+        android:textColorHint="#202040"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/blueConstrast">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/hospital_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:textColor="#000">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/loginHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_bg"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/hospital_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:text="Register Your Hospital"
+            android:textAlignment="center"
+            android:textColor="@color/blueDark"
+            android:textSize="20dp"
+            android:clickable="true"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <ImageView
+            android:id="@+id/nextPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:clickable="true"
+            android:paddingVertical="4dp"
+            android:src="@drawable/next_arrow" />
+
+
+    </LinearLayout>
+
+
+
+
 
 
 

@@ -37,7 +37,7 @@
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusTopStart="16dp"
-        app:boxStrokeColor="#0d47a1"
+        app:boxStrokeColor="@color/blueConstrast"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -71,7 +71,7 @@
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusTopStart="16dp"
-        app:boxStrokeColor="#0d47a1"
+        app:boxStrokeColor="@color/blueConstrast"
         >
 
 

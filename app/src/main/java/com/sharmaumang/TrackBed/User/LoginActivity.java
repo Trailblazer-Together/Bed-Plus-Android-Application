@@ -62,7 +62,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void NextToHospital(){
         Intent mIntent = new Intent(LoginActivity.this, HospitalLogin.class);
-        finish();
         startActivity(mIntent);
 
     }
