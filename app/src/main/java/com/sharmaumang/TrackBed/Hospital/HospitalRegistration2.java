@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.sharmaumang.TrackBed.R;
 
-public class HospitalRegistration extends AppCompatActivity {
+public class HospitalRegistration2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_registration);
+        setContentView(R.layout.activity_hospital_registration2);
     }
 }

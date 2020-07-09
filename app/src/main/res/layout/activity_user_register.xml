@@ -1,9 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
     tools:context="com.sharmaumang.TrackBed.User.UserRegister">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/bed_icon"
+        android:layout_marginVertical="15dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/editText31"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginTop="135dp"
+        android:elevation="5dp"
+        android:hint="Enter Full Name"
+        android:textColorHint="@color/blueDark"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/blueConstrast"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/userFullName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:textColor="#000">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/tEditText32"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="25dp"
+            android:elevation="5dp"
+            android:hint="Enter Age"
+            android:textColorHint="#202040"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxStrokeColor="@color/blueConstrast"
+            android:layout_weight="1"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/userAge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:textColor="#000">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/editText33"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="25dp"
+            android:elevation="5dp"
+            android:hint="Enter Gender"
+            android:textColorHint="#202040"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxStrokeColor="@color/blueConstrast"
+            android:layout_weight="1"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/userGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:textColor="#000">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/editText34"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginTop="135dp"
+        android:elevation="5dp"
+        android:hint="Enter Email"
+        android:textColorHint="@color/blueDark"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/blueConstrast"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/userPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:textColor="#000">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_bg"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        />
+
+
+</LinearLayout>
